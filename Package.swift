@@ -12,13 +12,13 @@ let package = Package(
             targets: ["IBGeoSelection"]),
     ],
     dependencies: [
-//        .package(path: "../IBExtensions")
-        .package(url: "https://github.com/Tintenklecks/IBExtensions.git", .branch("master"))
+       .package(path: "../IBExtensions")
+        // .package(url: "https://github.com/Tintenklecks/IBExtensions.git", .branch("master"))
     ],
     targets: [
         .target(
             name: "IBGeoSelection",
-            dependencies: []),
+            dependencies: ["IBExtensions"]),
         .testTarget(
             name: "IBGeoSelectionTests",
             dependencies: ["IBGeoSelection"]),
