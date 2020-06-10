@@ -12,7 +12,8 @@ let package = Package(
             targets: ["IBGeoSelection"]),
     ],
     dependencies: [
-        .package(path: "https://github.com/Tintenklecks/IBExtensions.git")
+//        .package(path: "../IBExtensions")
+        .package(url: "https://github.com/Tintenklecks/IBExtensions.git", .branch("master"))
     ],
     targets: [
         .target(
