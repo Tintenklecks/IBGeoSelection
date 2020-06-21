@@ -28,7 +28,6 @@ public struct GeoPickerView: View {
             let newDegree = Double(sign: sign, degree: degree, minute: minute, second: second)
             if abs(newDegree - degreeValue) > arcSecond {
                 degreeValue = newDegree
-                print(degreeValue)
             }
         }
     }
